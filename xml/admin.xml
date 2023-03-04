@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<admnistradores>
+    <admin>
+        <codigo>ADMIN001</codigo>
+        <nombre>Xander</nombre>
+        <apellido>Martínez</apellido>
+        <rol>Administrador</rol>
+        <img>Perfil.jpg</img>
+        <correo>admin10001@gmail.com</correo>
+        <contraseña>ADMIN123456</contraseña>
+    </admin>
+    <admin>
+        <codigo>ADMIN002</codigo>
+        <nombre>Ludwin</nombre>
+        <apellido>Martínez</apellido>
+        <img>Perfil.jpg</img>
+        <rol>Administrador</rol>
+        <correo>admin10002@gmail.com</correo>
+        <contraseña>ADMIN654321</contraseña>
+    </admin>
+</admnistradores>
