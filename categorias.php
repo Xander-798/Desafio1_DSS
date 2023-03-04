@@ -41,18 +41,25 @@
                         header('location:' . $_SERVER['PHP_SELF']);
                 }
 
-                $buscados = $product->encontrarCoincidencias($productos, $cat);
-                        
+                if(count($xml)>0){
+                    $buscados = $product->encontrarCoincidencias($productos, $cat); 
+                        echo "<div class=\"heder\">";
+                        echo "\t<div><h1 >Categoría actual: <b>$cat</b></h1></div>";
+                        echo "\t<div><a href=\"".$_SERVER['PHP_SELF']."\"><h1>Ver otra categoría</h1></a></div>";
+                        echo "</div>";
                         if(count($buscados)>0){
                             $productos = $buscados;
+                        
+                        
+                        foreach($productos as $producto){
+                            echo $producto;
+                            include('recursos/detalle_modal.php');   
                         }
-                echo "<div class=\"heder\">";
-                echo "\t<div><h1 >Categoría actual: <b>$cat</b></h1></div>";
-                echo "\t<div><a href=\"".$_SERVER['PHP_SELF']."\"><h1>Ver otra categoría</h1></a></div>";
-                echo "</div>";
-                foreach($productos as $producto){
-                    echo $producto;
-                    include('recursos/detalle_modal.php');   
+                        }else{
+                            echo "<h3 class=\"error\">Aún no hay productos</h3>";
+                        }
+                }else{
+                    echo "<h3 class=\"error\">Aún no hay productos</h3>";
                 }
             }else{               
                 echo "<h1 class=\"titul\">CATEGORIAS</h1>";

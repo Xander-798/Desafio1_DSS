@@ -19,11 +19,14 @@
         require('recursos/class/producto.class.php');
         $productos = array();
         $buscados= array();
-        foreach($xml->producto as $productinfo){
+        if(count($xml)>0){
+            foreach($xml->producto as $productinfo){
             $product = new Producto($productinfo->codigo, $productinfo->nombre, $productinfo->descripcion,
             $productinfo->img, $productinfo->categoria, $productinfo->precio, $productinfo->existencias);
             array_push($productos, $product);
-        }
+            }
+        
+        
     ?>
     <section class="indiceal">
             <article class="fomidos">
@@ -84,11 +87,16 @@
                             }
                         }
                     }
-
-                    foreach($productos as $producto){
-                        echo $producto;
-                        include('recursos/detalle_modal.php');   
+                    
+                        foreach($productos as $producto){
+                            echo $producto;
+                            include('recursos/detalle_modal.php');   
+                        }
+                    }else{
+                        echo "<h3 class=\"error\">Aún no hay productos</h3>";
                     }
+                
+                    
                     
                     
                 ?>
