@@ -1,0 +1,69 @@
+.fomidos .formulario{
+    margin-top: -15px;
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 2px solid orange;
+}
+
+.formulario h4{
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.formulario article{
+    width: 40%;
+    padding: 2%;
+}
+.formulario .data{
+    margin-bottom: 10%;
+}
+.formulario .data input[type="text"]{
+    float: right;
+    width: 90%;
+    text-align: right;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+.formulario div #boton{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario div #boton label{
+    width: 40%;
+}
+
+.formulario div #boton label input{
+    margin-right: 1%;
+}
+
+.formulario div input[type="submit"]{
+    width: 100%;
+    padding: 2%;
+    color: black;
+    background-color: rgb(235, 200, 44);
+    border-radius: 14px;
+    font-size: 130%;
+
+    border: none;
+}
+
+.formulario .enviar:hover{
+    background-color: greenyellow;
+    transition: 1s;
+    color: rgb(102, 6, 94);
+}
+
+.formulario .borra:hover{
+    background-color: red;
+    transition: 1s;
+    color: rgb(0, 21, 212);
+}

@@ -1,0 +1,56 @@
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+header{margin:0px; padding:0px; font-family: 'Open Sans', sans-serif;}
+.menu{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
+h1{margin:0px auto; display:table; font-size:26px; padding:40px 0px; color:#002e5b; text-align:center;}
+h1 span{font-weight:500;}
+
+header{width:100%; display:table; background-color:#fde428; margin-bottom:50px;}
+.menu #logo{float:left; font-size:24px; text-transform:uppercase; color:#002e5b; font-weight:600; padding:20px 0px; text-decoration: none;}
+.menu nav{width:auto; float:right;}
+.menu nav ul{display:table; float:right;}
+.menu nav ul li{float:left;}
+.menu nav ul li:last-child{padding-right:0px;}
+.menu nav ul li a{color:#002e5b; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+.menu nav ul li a:hover{background-color:#002e5b; color:#fde428; transition: all 0.5s ease 0s;}
+.menu nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
+.menu nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
+
+.menu .toggle-menu ul{display:table; width:25px;}
+.menu .toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
+.menu .toggle-menu ul li:last-child{margin-bottom:0px;}
+
+.menu input[type=checkbox], .menu label{display:none;}
+
+@media only screen and (max-width: 1440px) {
+    .menu {max-width:95%;}
+}
+
+@media only screen and (max-width: 980px) {
+header{padding:20px 0px;}
+.menu #logo{padding:0px;}
+.menu input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+.menu input[type=checkbox]:fous{background:none;}
+.menu label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
+.menu input[type=checkbox]:checked ~ nav {display:block;}
+
+.menu nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
+.menu nav ul{width:auto;}
+.menu nav ul li{float:none; padding:0px; width:100%; display:table;}
+.menu nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+.menu nav ul li a i{color:#fde428; padding-right:13px;}
+}
+
+@media only screen and (max-width: 480px) {
+    .menu{max-width: 90%;}
+}
+
+@media only screen and (max-width: 360px) {
+h1{font-size:20px;}
+.menu label{padding:5px 0px;}
+.menu #logo{font-size: 20px;}
+.menu nav{top:47px;}
+}
+
+@media only screen and (max-width: 320px) {
+h1 {padding: 20px 0px;}
+}

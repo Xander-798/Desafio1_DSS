@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.indiceal{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+.indiceal h1{
+    background-color: rgb(255, 240, 104);
+    text-align:center;
+    width: 99%;
+    margin: auto;
+    padding: 4%;
+    border-radius: 5px/1px;
+    margin-bottom: -10px;
+}
+
+.indiceal .alte{
+    background-color:white;
+    text-align:center;
+    width: 99%;
+    margin: auto;
+    border-radius: 5px/1px;
+    margin-bottom: -10px;
+}
+.indiceal .error{
+    color: rgb(151, 14, 14);
+    text-align:justify;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+article{
+    width: 50%;
+    height: auto;
+
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 60%;
+    margin: auto;
+    border: 1px solid rgb(255, 240, 104);
+    border-radius: 5px;
+    background-color: white;
+}
+
+form div{
+    margin: 1% auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+form div label{
+    width: 60%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.categoria{
+    width: 90%;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+}
+
+/*.categoria label:nth-child(n+2){
+    float: left;
+    display: inherit;
+    align-items: center;
+
+    padding: auto;
+    margin: auto;
+    width: 40%;
+    
+}*/
+input, textarea{
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+form input[type="submit"]{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    border: none;
+    
+
+    background-color: rgb(219, 202, 48);
+    color: black;
+    margin: 0;
+}
+
+form input[type="submit"]:hover{
+    color: white;
+    background-color: rgb(44, 187, 25);
+    transition: 0.5s;
+}
+
+
+form input[type="file"]{
+    background-color: #ffd82d;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 1%;
+    width: 100%;
+}
+
+h4{
+    background-color: rgb(255, 62, 62);
+    text-align: right;
+    padding: 1%;
+    border-radius: 5px;
+}
+.error{
+    background-color: red;
+    color: aliceblue;
+    text-align: center;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+
+
+b{
+    text-transform: uppercase;
+}

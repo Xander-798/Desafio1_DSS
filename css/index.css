@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+.indiceal{
+    width: 100%;
+    padding: auto;
+}
+
+.indiceal .titulo{
+    background-color: white;
+    text-align:center;
+    width: 100%;
+}
+
+.indiceal .error{
+    color: rgb(151, 14, 14);
+    text-align:justify;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+article{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+}
+
+.prod{
+    width: 31%;
+    height: 357px;
+    margin: 1%;
+    padding: auto;
+    float: left;
+    text-align: center;
+    border: none;
+    margin-bottom: 9%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.prod:hover{
+    border: 1px solid rgb(115, 243, 29);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.prod h3{
+    margin-top: 3%;
+    font-size: 125%;
+    height: 200px;
+}
+
+
+.prod .precio{
+    padding: 2%;
+    font-weight: bold;
+    font-size: 150%;
+
+}
+
+.prod .precio:hover{
+    color: rgb(79, 250, 79);
+    transition: 0.5s;
+}
+
+
+.prod img{
+    width: 60%;
+    height: auto;
+}
+
+b{
+    text-transform: uppercase;
+}
+
+.Cuerpo{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: auto;
+}
+
+.Cuerpo article{
+    width: 40%;
+    height: 40%;
+}
+
+.Cuerpo article+article{
+    width: 45%;
+    height: 40%;
+}
+
+.Cuerpo h2{
+    font-size: 110%;
+}
+
+.Cuerpo article img{
+    width: 100%;
+
+}
+
+.btn-default{
+    width: 100%;
+}
