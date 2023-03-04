@@ -14,7 +14,7 @@
         $prod->addChild('existencias', $producto->getExistencias());
     
         file_put_contents("../xml/productos.xml", $productos->asXML());
-        header('location: ../index.php');
+        header('location: ../adminando.php');
         }
     }else{
         header('location: ../index.php');
